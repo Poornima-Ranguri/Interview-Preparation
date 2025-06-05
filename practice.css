@@ -6,6 +6,7 @@ tfoot {
 
 tbody {
     background-color: #e4f0f5;
+    width: 100vw;
 }
 
 table {
@@ -31,4 +32,24 @@ td {
 
 td {
     text-align: center;
+}
+
+/* .grid-container {
+    display: grid;
+    width: 80vw;
+    height: 50vh;
+    align-content: flex-start;
+} */
+
+.grid-item {
+    background-color: darkcyan;
+    padding: 30px;
+    width: 20px;
+    border: solid 2px darksalmon;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
 }

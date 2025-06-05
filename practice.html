@@ -36,32 +36,69 @@
             </tr>
         </tfoot>
     </table>
-    <table>
-        <caption>Poornima Budget</caption>
-        <thead>
-            <tr>
-                <th scope="col">Name</th>
-                <th scope="row">Age</th>
-                <th>Gender</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">Poori</th>
-                <td>21</td>
-                <td>Female</td>
+    <table class="poori"></table>
+    <caption>Poornima Budget</caption>
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="row">Age</th>
+            <th>Gender</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Poori</th>
+            <td>21</td>
+            <td>Female</td>
 
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th scope="col">Amma</th>
-                <td>Nanna</td>
-                <td>Nenu</td>
-            </tr>
-        </tfoot>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th scope="col">Amma</th>
+            <td>Nanna</td>
+            <td>Nenu</td>
+        </tr>
+    </tfoot>
     </table>
+
+    <form action="submit">
+        <input type="text" name="username" id="username" placeholder="Enter name" required
+            autocomplete="additional-name">
+        <label for="username">Enter username : </label>
+        <input type="password" name="password" id="password" disabled>
+        <label for="password">Enter password:
+        </label>
+        <input type="file" name="file" id="file">
+        <label for="file">Enter File : </label>
+        <input type="email" name="email" id="email" required>
+        <label for="email">Enter Email:
+        </label>
+        <fieldset>
+            <legend>Do you agree with me ?</legend>
+            <input type="radio" name="radio" value="Yes" id="yes">
+            <input type="radio" name="radio" id="No" value="No">
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+    <div class="poori">
+    </div>
+    <template id="product">
+        <p></p>
+    </template>
+    <h1>Grid Container</h1>
+    <div class="grid-container">
+        <div class="grid-item">Grid 1</div>
+        <div class="grid-item">Grid 2</div>
+        <div class="grid-item">Grid 3</div>
+        <div class="grid-item">Grid 4</div>
+        <div class="grid-item">Grid 5</div>
+        <div class="grid-item">Grid 6</div>
+    </div>
+
     <script src="./practice.js"></script>
+
+
 </body>
 
 </html>
