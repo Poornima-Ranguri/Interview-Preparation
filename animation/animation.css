@@ -1,0 +1,151 @@
+.container {
+    background-color: thistle;
+    padding: 30px
+}
+
+.container div {
+    background-color: antiquewhite;
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+
+
+.container div:nth-child(1):hover {
+    animation-name: first-item;
+    animation-duration: 3s;
+    animation-delay: 1ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    /* animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards; */
+
+}
+
+
+@keyframes first-item {
+    0% {
+        background-color: cadetblue;
+    }
+
+    25% {
+        background-color: aliceblue;
+    }
+
+    50% {
+        background-color: skyblue;
+    }
+
+    100% {
+        background-color: hotpink;
+    }
+
+}
+
+
+.container div:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: hotpink;
+    animation-name: second-item;
+    animation-duration: 6s;
+    animation-iteration-count: 10;
+    animation-fill-mode: backwards;
+
+}
+
+@keyframes second-item {
+    0% {
+        background-color: springgreen;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 300px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 400px;
+        top: 300px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: rgb(128, 194, 198);
+        left: 0px;
+        top: 0px;
+    }
+
+}
+
+
+.container div:nth-child(3) {
+    animation: third-item 6s linear 1ms infinite alternate;
+}
+
+@keyframes third-item {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.container div:nth-child(4) {
+    animation: fourth-item 3s ease-in-out 1ms 6 backwards alternate-reverse;
+    position: relative;
+}
+
+@keyframes fourth-item {
+    from {
+        transform: rotate(180deg);
+        background-color: brown;
+        left: 0px;
+        top: 0px;
+
+    }
+
+    to {
+        transform: rotate(360deg);
+        background-color: turquoise;
+        left: 200px;
+        top: 0;
+
+    }
+}
