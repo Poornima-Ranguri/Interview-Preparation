@@ -1,0 +1,12 @@
+.container {
+    text-align: center;
+}
+
+.container div {
+    background-color: wheat;
+    padding: 20px;
+    margin-top: 3px;
+    text-shadow: 2rem;
+    color: black;
+    font-weight: bold;
+}
